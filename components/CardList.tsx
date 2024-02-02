@@ -1,6 +1,7 @@
 import { Pokemon } from "@/types/types";
 import { IMG_BASE_URL } from "@/utils/constant";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface CardListProps {
     item: Pokemon
@@ -9,11 +10,14 @@ interface CardListProps {
 export default function CardList({
     item
 }: CardListProps) {
+
+    const router = useRouter();
     const pokemonUrl = item.url;
-    const pokemonIndex = pokemonUrl.split('/').slice(-2)[0]
+    const pokemonIndex = pokemonUrl.split('/').slice(-2)[0];
+    const goToDetails = () => router.push(`details/${pokemonIndex}`);
 
     return (
-        <div className="col-span-12 sm:col-span-6 md:col-span-4  card  bg-white shadow-xl rounded-2xl" key={item.name}>
+        <div className="col-span-12 sm:col-span-6 md:col-span-4 card bg-base-100 shadow-xl rounded-2xl" key={item.name}>
             <figure>
                 <Image 
                     src={`${IMG_BASE_URL}/${pokemonIndex}.png`} 
@@ -28,7 +32,12 @@ export default function CardList({
                     <h2 className="card-title capitalize">{item.name}</h2>
                 </div>
                 <div className="card-actions mt-3">
-                    <button className="btn btn-sm w-full btn-secondary rounded-full">See Details</button>
+                    <button 
+                        onClick={goToDetails}
+                        className="btn btn-sm w-full btn-secondary rounded-full"
+                    >
+                        See Details
+                    </button>
                 </div>
             </div>
         </div>

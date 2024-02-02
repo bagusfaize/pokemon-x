@@ -1,16 +1,14 @@
 'use client'
 
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import Homepage from "./Homepage/Homepage";
+import Container from "@/components/Container";
+import Hero from "@/components/Hero";
+import PokemonList from "./list/List";
 
-export default function Home() {
-  const queryClient = new QueryClient();
-
+export default function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Homepage />
-      <ReactQueryDevtools />
-    </QueryClientProvider>
+    <Container>
+      <Hero />
+      <PokemonList />
+    </Container>
   );
 }
