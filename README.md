@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About The Project
 
-## Getting Started
+![image](https://github.com/bagusfaize/pokemon-x/assets/50720858/363b6f6e-631a-4646-bb5f-c6635ead477c)
 
-First, run the development server:
+## Pokedex Xcdic
+Simple application used for see list of pokemons and see the pokemon details. 
 
+## Built with
+This application built with NextJS 14 with app directories. Stack:
+<ul>
+  <li>NextJS</li>
+  <li>React</li>
+  <li>React Query</li>
+  <li>TailwindCSS</li>
+  <li>Axios</li>
+  <li>React Icons</li>
+  <li>DaisyUI</li>
+</ul>
+
+## Demo project
+This application deployed on Vercel. <br/>
+Have a look here at [Demo Page](https://pokemon-xcdc.vercel.app/).
+
+## How to Run Project
+Make sure you have Node JS installed on your PC.
+1. Clone this repository by copy and run to your Terminal
+```bash
+git clone https://github.com/bagusfaize/pokemon-x.git
+```
+2. Go to the project folder
+```bash
+cd .\pokemon-x\
+```
+3. Install NPM package dependencies
+```bash
+npm install
+```
+4. Run project in development mode
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact me
+### Bagus Faizun <br/>
+Email : [bagusfaizn@gmail.com](mailto:bagusfaizn@gmail.com) <br/>
+Web Portfolio: [Portfolio](https://bagusfaizn.vercel.app/) <br/>
+LinkedIn : [Bagus Faizun](https://www.linkedin.com/in/bagus-faizun-925610187/)
