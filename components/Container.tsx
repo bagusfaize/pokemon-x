@@ -1,7 +1,7 @@
 
 interface ContainerProps {
     children: React.ReactNode,
-    className: string
+    className?: string
 }
 
 export default function Container({
