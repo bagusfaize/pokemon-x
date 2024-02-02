@@ -21,8 +21,6 @@ export default function Details({ params }: { params: { id: number } }) {
 
   const goBack = () => router.push('/')
 
-  console.log('clg data', data);
-
   return (
     <Container className="py-5">
       <div className="flex gap-2 items-center">
@@ -37,7 +35,7 @@ export default function Details({ params }: { params: { id: number } }) {
         </h1>
       </div>
       <div className="grid grid-cols-3 py-10">
-        <div className="col-span-1 flex flex-col justify-center items-center">
+        <div className="col-span-3 sm:col-span-1 flex flex-col justify-center items-center">
           <Image
             src={`${IMG_BASE_URL}/${id}.png`}
             alt={`pokemon-img-${id}`}
@@ -61,7 +59,7 @@ export default function Details({ params }: { params: { id: number } }) {
             </div>
           </div>
         </div>
-        <div className="col-span-2 px-16">
+        <div className="col-span-3 sm:col-span-2 px-1 sm:px-16 mt-10 sm:mt-0">
           <h1 className="text-3xl font-bold text-gray-800 capitalize">
             Stats
           </h1>

@@ -1,5 +1,6 @@
 import CardList from "@/components/CardList";
 import Pagination from "@/components/Pagination";
+import SearchBox from "@/components/SearchBox";
 import { usePagination } from "@/hooks/usePagination";
 import { getPokemons } from "@/services/api"
 import { Pokemon } from "@/types/types";
@@ -22,7 +23,9 @@ export default function PokemonList() {
 
     return (
         <div className="mx-auto">
-            {/* <h1 className="text-lg font-medium mb-10">List of Pokemons</h1> */}
+            <div className="mb-16">
+                <SearchBox />
+            </div>
             <div className="grid grid-cols-12 gap-7 mx-auto">
                 {data?.results?.map((item: Pokemon) => {
                     return (
